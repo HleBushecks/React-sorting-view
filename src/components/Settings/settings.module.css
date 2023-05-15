@@ -1,0 +1,28 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px
+}
+
+.settings {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px
+}
+
+.block button {
+  outline: none;
+  border: 1px solid #8AA4AE;
+  border-radius: 5px;
+  background: #181818;
+  color: #8C8C8C;
+  font-size: medium;
+  padding: 5px 10px;
+  transition: all .2s linear;
+}
+
+.block button:hover {
+  background: #8AA4AE;
+  color: #181818
+}

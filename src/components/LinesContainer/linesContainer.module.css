@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+  gap: 5px;
+  flex-direction: row-reverse;
+  transform: rotate(180deg);
+  margin-top: 50px;
+}

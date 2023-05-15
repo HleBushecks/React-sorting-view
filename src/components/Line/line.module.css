@@ -1,0 +1,10 @@
+.line {
+  background: blue;
+  animation: changeColor 0s .1s normal forwards;
+}
+
+@keyframes changeColor {
+  to {
+    background: white;
+  }
+}
