@@ -26,3 +26,23 @@
   background: #8AA4AE;
   color: #181818
 }
+
+.block select {
+  border: 1px solid #8AA4AE;
+  border-radius: 5px;
+  background: #181818;
+  color: #8C8C8C;
+  font-size: medium;
+  padding: 5px 10px;
+  transition: all .2s linear;
+}
+
+.block select:hover {
+  background: #8AA4AE;
+  color: #181818
+}
+
+.block select option {
+  background: #181818;
+  color: #8C8C8C;
+}

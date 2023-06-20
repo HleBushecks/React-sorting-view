@@ -1,19 +1,16 @@
 import { FC } from 'react'
+import { useSettings } from '../../hooks/useSettings'
 import styles from './line.module.css'
 
 interface Props {
-  height: number,
-  width?: number,
-  heightModifier?: number,
+  height: number
 }
 
-const Line: FC<Props> = ({ height, width = 10, heightModifier = 10 }) => {
+const Line: FC<Props> = ({ height }) => {
+  const { length } = useSettings()
+
   return (
-    <div className={styles.line} style={{
-      height: height * heightModifier,
-      width,
-    }}>
-    </div>
+    <div className={styles.line} style={{ height: `${height / length * 80}vh` }}></div>
   )
 }
 

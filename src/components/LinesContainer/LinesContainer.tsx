@@ -1,19 +1,16 @@
 import { FC } from 'react'
-import { ISettings } from '../../types/Settings'
 import Line from '../Line/Line'
 import styles from './linesContainer.module.css'
+
 interface Props {
-  array: number[],
-  settings: ISettings
+  array: number[]
 }
 
-const LinesContainer: FC<Props> = ({ array, settings }) => {
+const LinesContainer: FC<Props> = ({ array }) => {
   return (
-    <div className={styles.container} style={{
-      gap: settings.gap
-    }}>
+    <div className={styles.container}>
       {array.map(el =>
-        <Line height={el} key={el} heightModifier={settings.height} width={settings.width} />
+        <Line height={el} key={el} />
       )}
     </div>
   )
